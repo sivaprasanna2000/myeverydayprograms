@@ -1,0 +1,24 @@
+/*The sum of the squares of the first ten natural numbers is,
+
+The square of the sum of the first ten natural numbers is,
+
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is .
+
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.*/
+package my;
+
+public class eulerprblm5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int sum1=0,sum2=0;
+		long c=0;
+		for(int i=1;i<=100;i++) {
+			sum1=sum1+(i*i);
+			sum2+=i;
+		}
+		c=(sum2*sum2)-sum1;
+		System.out.println(c);
+	}
+
+}
